@@ -8,7 +8,7 @@ api = Api(app)
 file = open("data.json")
 data = json.load(file)
 
-@app.route('/users', methods=['GET'])
+@app.route('/users/', methods=['GET'])
 def users():
     return jsonify(data)
 
